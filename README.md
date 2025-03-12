@@ -17,10 +17,10 @@ The application is deployed on Streamlit Cloud. You can access it here:
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/lizardcat/intelligent_tutoring_system.git
+git clone https://github.com/lizardcat/intelligent-tutoring-system.git
 ```
 ```sh
-cd intelligent_tutoring_system
+cd intelligent-tutoring-system
 ```
 
 ### 2. Install Dependencies
