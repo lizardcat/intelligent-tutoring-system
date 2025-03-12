@@ -1,13 +1,13 @@
 import sqlite3
 import json
-import hashlib  # For password hashing
+import os
 
 # Connect to the database
 def get_db_connection():
     conn = sqlite3.connect("db.sqlite3")
     return conn
 
-# Create tables for questions, student progress, and student accounts
+# Create tables for questions and student progress
 def create_tables():
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -17,7 +17,7 @@ def create_tables():
         CREATE TABLE IF NOT EXISTS questions (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             type TEXT NOT NULL,
-            question TEXT NOT NULL,
+            question TEXT NOT NULL UNIQUE,
             options TEXT,
             answer TEXT NOT NULL,
             difficulty TEXT
@@ -28,7 +28,7 @@ def create_tables():
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS student_progress (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            student_id INTEGER NOT NULL,
+            student_id TEXT NOT NULL,  -- Using session-based IDs
             question_id INTEGER NOT NULL,
             is_correct INTEGER NOT NULL,
             timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
@@ -40,8 +40,14 @@ def create_tables():
 
 # Load default questions from JSON file
 def load_default_questions():
-    with open("data/questions.json", "r", encoding="utf-8") as file:
-        questions = json.load(file)["questions"]
+    json_path = "data/questions.json"
+    
+    if not os.path.exists(json_path):
+        print("⚠️ No default questions file found. Skipping loading questions.")
+        return
+    
+    with open(json_path, "r", encoding="utf-8") as file:
+        questions = json.load(file).get("questions", [])
 
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -49,49 +55,21 @@ def load_default_questions():
     for q in questions:
         options = json.dumps(q.get("options", []))  # Defaults to [] if "options" key is missing
 
-        cursor.execute("""
-            INSERT INTO questions (type, question, options, answer, difficulty) 
-            VALUES (?, ?, ?, ?, ?)""",
-            (q["type"], q["question"], options, q["answer"], q.get("difficulty", "medium"))
-        )
+        try:
+            cursor.execute("""
+                INSERT INTO questions (type, question, options, answer, difficulty) 
+                VALUES (?, ?, ?, ?, ?)""",
+                (q["type"], q["question"], options, q["answer"], q.get("difficulty", "medium"))
+            )
+        except sqlite3.IntegrityError:
+            print(f"⚠️ Question already exists: {q['question']}")
 
     conn.commit()
     conn.close()
 
-# Hash passwords for security
-def hash_password(password):
-    return hashlib.sha256(password.encode()).hexdigest()
-
-# Add a new student (Register)
-def add_student(username, password):
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    
-    try:
-        cursor.execute("INSERT INTO students (username, password) VALUES (?, ?)", (username, hash_password(password)))
-        conn.commit()
-        print(f"✅ Student '{username}' registered successfully!")
-    except sqlite3.IntegrityError:
-        print(f"⚠️ Username '{username}' already exists!")
-    
-    conn.close()
-
-# Authenticate student login
-def authenticate_student(username, password):
-    conn = get_db_connection()
-    cursor = conn.cursor()
-
-    cursor.execute("SELECT id, password FROM students WHERE username=?", (username,))
-    student = cursor.fetchone()
-    
-    conn.close()
-    
-    if student and student[1] == hash_password(password):
-        return student[0]  # Return student ID if credentials match
-    else:
-        return None  # Invalid login
+# Ensure tables are created on every run
+create_tables()
 
 if __name__ == "__main__":
-    create_tables()
     load_default_questions()
     print("✅ Database setup complete!")

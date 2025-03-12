@@ -16,7 +16,7 @@ if "student_id" not in st.session_state:
 # Sidebar Navigation
 st.sidebar.title("🧠 Intelligent Tutoring System")
 st.sidebar.markdown("""
-This is a project for a **Knowledge-Based Systems (KBS) class**, designed to provide an intelligent tutoring experience. Full implementation available on GitHub [here](https://github.com/lizardcat/intelligent_tutoring_system).
+This is a project for a **Knowledge-Based Systems (KBS) class**, designed to provide an intelligent tutoring experience. Full implementation available on GitHub [here](https://github.com/lizardcat/intelligent-tutoring-system).
 
 **Features:**
 - 📚 Adaptive questioning: Adjusts difficulty based on performance.
