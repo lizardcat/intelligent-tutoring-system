@@ -1,0 +1,687 @@
+{
+    "questions": [
+        {
+            "id": 18,
+            "type": "mcq",
+            "question": "Which of the following best describes the DIKW hierarchy?",
+            "options": [
+                "A. Data -> Knowledge -> Information -> Wisdom",
+                "B. Data -> Information -> Knowledge -> Wisdom",
+                "C. Data -> Wisdom -> Knowledge -> Information",
+                "D. Knowledge -> Data -> Information -> Wisdom"
+            ],
+            "answer": "B. Data -> Information -> Knowledge -> Wisdom",
+            "difficulty": "medium"
+        },
+        {
+            "id": 20,
+            "type": "mcq",
+            "question": "Which programming language is commonly used for developing Knowledge-Based Systems?",
+            "options": [
+                "A. Java",
+                "B. Python",
+                "C. Prolog",
+                "D. All of the above"
+            ],
+            "answer": "D. All of the above",
+            "difficulty": "medium"
+        },
+        {
+            "id": 21,
+            "type": "short_answer",
+            "question": "What is the purpose of an Inference Engine in a KBS?",
+            "options": "[]",
+            "answer": "The inference engine applies logical rules to the knowledge base to infer new knowledge and derive conclusions.",
+            "difficulty": "medium"
+        },
+        {
+            "id": 22,
+            "type": "mcq",
+            "question": "Which tool is commonly used for building ontologies in AI?",
+            "options": [
+                "A. Protege",
+                "B. MATLAB",
+                "C. Jupyter Notebook",
+                "D. TensorFlow"
+            ],
+            "answer": "A. Protege",
+            "difficulty": "medium"
+        },
+        {
+            "id": 23,
+            "type": "short_answer",
+            "question": "Fill in the blank: ________ knowledge is difficult to articulate and is often gained through experience.",
+            "options": "[]",
+            "answer": "Tacit",
+            "difficulty": "medium"
+        },
+        {
+            "id": 24,
+            "type": "mcq",
+            "question": "Which AI technique allows a Knowledge-Based System to update dynamically?",
+            "options": [
+                "A. Machine Learning",
+                "B. Decision Trees",
+                "C. SQL Queries",
+                "D. Spreadsheets"
+            ],
+            "answer": "A. Machine Learning",
+            "difficulty": "medium"
+        },
+        {
+            "id": 25,
+            "type": "mcq",
+            "question": "Which of the following is an application of KBS in the real world?",
+            "options": [
+                "A. Medical Diagnosis",
+                "B. Legal Decision Support",
+                "C. Stock Market Forecasting",
+                "D. All of the above"
+            ],
+            "answer": "D. All of the above",
+            "difficulty": "medium"
+        },
+        {
+            "id": 26,
+            "type": "coding",
+            "question": "Write a Python function that implements a simple rule-based system to determine if a person is eligible for a loan based on their credit score.",
+            "options": "[]",
+            "answer": "def check_loan_eligibility(credit_score):\n    if credit_score >= 700:\n        return 'Eligible'\n    else:\n        return 'Not Eligible'\n\nprint(check_loan_eligibility(750))  # Example usage",
+            "difficulty": "medium"
+        },
+        {
+            "id": 27,
+            "type": "short_answer",
+            "question": "What is heuristic knowledge?",
+            "options": "[]",
+            "answer": "Heuristic knowledge refers to rule-of-thumb strategies used to solve problems efficiently.",
+            "difficulty": "medium"
+        },
+        {
+            "id": 28,
+            "type": "mcq",
+            "question": "Which of the following is NOT a property of knowledge representation?",
+            "options": [
+                "A. Expressiveness",
+                "B. Consistency",
+                "C. Uncertainty Handling",
+                "D. Speed of Execution"
+            ],
+            "answer": "D. Speed of Execution",
+            "difficulty": "medium"
+        },
+        {
+            "id": 29,
+            "type": "true_false",
+            "question": "True or False: An ontology in AI structures knowledge to improve reasoning.",
+            "options": "[]",
+            "answer": "True",
+            "difficulty": "medium"
+        },
+        {
+            "id": 30,
+            "type": "mcq",
+            "question": "Which tool is widely used to create knowledge graphs in AI?",
+            "options": [
+                "A. Neo4j",
+                "B. Scikit-Learn",
+                "C. PyTorch",
+                "D. Keras"
+            ],
+            "answer": "A. Neo4j",
+            "difficulty": "medium"
+        },
+        {
+            "id": 31,
+            "type": "mcq",
+            "question": "Which of the following best describes an Expert System?",
+            "options": [
+                "A. A system that learns autonomously",
+                "B. A system that applies human expertise through predefined rules",
+                "C. A system that processes large-scale numerical data",
+                "D. A system designed solely for data storage"
+            ],
+            "answer": "B. A system that applies human expertise through predefined rules",
+            "difficulty": "medium"
+        },
+        {
+            "id": 32,
+            "type": "mcq",
+            "question": "What is the primary function of a Knowledge Base in a KBS?",
+            "options": [
+                "A. To store data temporarily",
+                "B. To enable machine learning algorithms",
+                "C. To provide a structured repository of expert knowledge",
+                "D. To execute compiled programs"
+            ],
+            "answer": "C. To provide a structured repository of expert knowledge",
+            "difficulty": "medium"
+        },
+        {
+            "id": 33,
+            "type": "mcq",
+            "question": "Which of these is a key challenge in Knowledge-Based Systems?",
+            "options": [
+                "A. Lack of computing power",
+                "B. Knowledge acquisition bottleneck",
+                "C. High memory consumption",
+                "D. Real-time processing issues"
+            ],
+            "answer": "B. Knowledge acquisition bottleneck",
+            "difficulty": "medium"
+        },
+        {
+            "id": 34,
+            "type": "mcq",
+            "question": "Which of the following is NOT an example of knowledge representation?",
+            "options": [
+                "A. Decision Trees",
+                "B. Relational Databases",
+                "C. JSON Files",
+                "D. Semantic Networks"
+            ],
+            "answer": "C. JSON Files",
+            "difficulty": "medium"
+        },
+        {
+            "id": 35,
+            "type": "mcq",
+            "question": "Which AI technique allows an Expert System to explain its reasoning process?",
+            "options": [
+                "A. Machine Learning",
+                "B. Backward Chaining",
+                "C. Neural Networks",
+                "D. Genetic Algorithms"
+            ],
+            "answer": "B. Backward Chaining",
+            "difficulty": "medium"
+        },
+        {
+            "id": 36,
+            "type": "true_false",
+            "question": "Inference engines can use both forward and backward chaining for reasoning.",
+            "options": "[]",
+            "answer": "True",
+            "difficulty": "medium"
+        },
+        {
+            "id": 37,
+            "type": "true_false",
+            "question": "Tacit knowledge is easily documented and transferred.",
+            "options": "[]",
+            "answer": "False",
+            "difficulty": "medium"
+        },
+        {
+            "id": 38,
+            "type": "true_false",
+            "question": "Machine Learning and KBS are mutually exclusive technologies.",
+            "options": "[]",
+            "answer": "False",
+            "difficulty": "medium"
+        },
+        {
+            "id": 39,
+            "type": "true_false",
+            "question": "Rule-Based Systems rely solely on structured data, not unstructured data.",
+            "options": "[]",
+            "answer": "True",
+            "difficulty": "medium"
+        },
+        {
+            "id": 40,
+            "type": "true_false",
+            "question": "In the DIKW hierarchy, wisdom is derived from raw data.",
+            "options": "[]",
+            "answer": "False",
+            "difficulty": "medium"
+        },
+        {
+            "id": 41,
+            "type": "fill_in_blank",
+            "question": "Fill in the blank: ________ is a technique used in KBS to resolve conflicts between rules.",
+            "options": "[]",
+            "answer": "Conflict Resolution",
+            "difficulty": "medium"
+        },
+        {
+            "id": 44,
+            "type": "short_answer",
+            "question": "What is the main difference between an Expert System and a Machine Learning model?",
+            "options": "[]",
+            "answer": "An Expert System relies on predefined rules, whereas a Machine Learning model learns from data patterns.",
+            "difficulty": "medium"
+        },
+        {
+            "id": 45,
+            "type": "short_answer",
+            "question": "What is the purpose of ontology in AI?",
+            "options": "[]",
+            "answer": "Ontology structures knowledge to enable better reasoning and inference.",
+            "difficulty": "medium"
+        },
+        {
+            "id": 46,
+            "type": "short_answer",
+            "question": "Explain the difference between forward chaining and backward chaining.",
+            "options": "[]",
+            "answer": "Forward chaining starts from known facts and applies rules to infer conclusions, whereas backward chaining starts with a hypothesis and works backward to find supporting evidence.",
+            "difficulty": "medium"
+        },
+        {
+            "id": 47,
+            "type": "mcq",
+            "question": "Which Python library is commonly used for implementing rule-based systems?",
+            "options": [
+                "A. NumPy",
+                "B. Pandas",
+                "C. scikit-learn",
+                "D. pyknow"
+            ],
+            "answer": "D. pyknow",
+            "difficulty": "medium"
+        },
+        {
+            "id": 48,
+            "type": "mcq",
+            "question": "Which AI system is most suitable for medical diagnosis applications?",
+            "options": [
+                "A. Neural Networks",
+                "B. Rule-Based Expert Systems",
+                "C. Genetic Algorithms",
+                "D. Clustering Algorithms"
+            ],
+            "answer": "B. Rule-Based Expert Systems",
+            "difficulty": "medium"
+        },
+        {
+            "id": 49,
+            "type": "coding",
+            "question": "Write a Python function that uses an if-else statement to determine whether a temperature value indicates fever (above 37.5\u00b0C).",
+            "options": "[]",
+            "answer": "def check_fever(temp):\n    if temp > 37.5:\n        return 'Fever Detected'\n    else:\n        return 'Normal Temperature'\n\nprint(check_fever(38))",
+            "difficulty": "medium"
+        },
+        {
+            "id": 50,
+            "type": "coding",
+            "question": "Write a Python function to classify a student's grade based on the following rules: A (90-100), B (80-89), C (70-79), D (60-69), F (below 60).",
+            "options": "[]",
+            "answer": "def classify_grade(score):\n    if score >= 90:\n        return 'A'\n    elif score >= 80:\n        return 'B'\n    elif score >= 70:\n        return 'C'\n    elif score >= 60:\n        return 'D'\n    else:\n        return 'F'\n\nprint(classify_grade(85))",
+            "difficulty": "medium"
+        },
+        {
+            "id": 51,
+            "type": "mcq",
+            "question": "What are the key components of a Knowledge-Based System (KBS)?",
+            "options": [
+                "A. Knowledge Base and Inference Engine",
+                "B. Data Warehouse and API Gateway",
+                "C. Neural Network and Machine Learning Model",
+                "D. File System and Database"
+            ],
+            "answer": "A. Knowledge Base and Inference Engine",
+            "difficulty": "medium"
+        },
+        {
+            "id": 52,
+            "type": "mcq",
+            "question": "Which of the following best describes the DIKW hierarchy?",
+            "options": [
+                "A. Data -> Knowledge -> Information -> Wisdom",
+                "B. Data -> Information -> Knowledge -> Wisdom",
+                "C. Data -> Wisdom -> Knowledge -> Information",
+                "D. Knowledge -> Data -> Information -> Wisdom"
+            ],
+            "answer": "B. Data -> Information -> Knowledge -> Wisdom",
+            "difficulty": "medium"
+        },
+        {
+            "id": 53,
+            "type": "true_false",
+            "question": "True or False: Expert systems rely on rule-based inference to make decisions.",
+            "options": "[]",
+            "answer": "True",
+            "difficulty": "medium"
+        },
+        {
+            "id": 54,
+            "type": "mcq",
+            "question": "Which programming language is commonly used for developing Knowledge-Based Systems?",
+            "options": [
+                "A. Java",
+                "B. Python",
+                "C. Prolog",
+                "D. All of the above"
+            ],
+            "answer": "D. All of the above",
+            "difficulty": "medium"
+        },
+        {
+            "id": 55,
+            "type": "short_answer",
+            "question": "What is the purpose of an Inference Engine in a KBS?",
+            "options": "[]",
+            "answer": "The inference engine applies logical rules to the knowledge base to infer new knowledge and derive conclusions.",
+            "difficulty": "medium"
+        },
+        {
+            "id": 56,
+            "type": "mcq",
+            "question": "Which tool is commonly used for building ontologies in AI?",
+            "options": [
+                "A. Protege",
+                "B. MATLAB",
+                "C. Jupyter Notebook",
+                "D. TensorFlow"
+            ],
+            "answer": "A. Protege",
+            "difficulty": "medium"
+        },
+        {
+            "id": 57,
+            "type": "short_answer",
+            "question": "Fill in the blank: ________ knowledge is difficult to articulate and is often gained through experience.",
+            "options": "[]",
+            "answer": "Tacit",
+            "difficulty": "medium"
+        },
+        {
+            "id": 58,
+            "type": "mcq",
+            "question": "Which AI technique allows a Knowledge-Based System to update dynamically?",
+            "options": [
+                "A. Machine Learning",
+                "B. Decision Trees",
+                "C. SQL Queries",
+                "D. Spreadsheets"
+            ],
+            "answer": "A. Machine Learning",
+            "difficulty": "medium"
+        },
+        {
+            "id": 59,
+            "type": "mcq",
+            "question": "Which of the following is an application of KBS in the real world?",
+            "options": [
+                "A. Medical Diagnosis",
+                "B. Legal Decision Support",
+                "C. Stock Market Forecasting",
+                "D. All of the above"
+            ],
+            "answer": "D. All of the above",
+            "difficulty": "medium"
+        },
+        {
+            "id": 60,
+            "type": "coding",
+            "question": "Write a Python function that implements a simple rule-based system to determine if a person is eligible for a loan based on their credit score.",
+            "options": "[]",
+            "answer": "def check_loan_eligibility(credit_score):\n    if credit_score >= 700:\n        return 'Eligible'\n    else:\n        return 'Not Eligible'\n\nprint(check_loan_eligibility(750))  # Example usage",
+            "difficulty": "medium"
+        },
+        {
+            "id": 61,
+            "type": "short_answer",
+            "question": "What is heuristic knowledge?",
+            "options": "[]",
+            "answer": "Heuristic knowledge refers to rule-of-thumb strategies used to solve problems efficiently.",
+            "difficulty": "medium"
+        },
+        {
+            "id": 62,
+            "type": "mcq",
+            "question": "Which of the following is NOT a property of knowledge representation?",
+            "options": [
+                "A. Expressiveness",
+                "B. Consistency",
+                "C. Uncertainty Handling",
+                "D. Speed of Execution"
+            ],
+            "answer": "D. Speed of Execution",
+            "difficulty": "medium"
+        },
+        {
+            "id": 63,
+            "type": "true_false",
+            "question": "True or False: An ontology in AI structures knowledge to improve reasoning.",
+            "options": "[]",
+            "answer": "True",
+            "difficulty": "medium"
+        },
+        {
+            "id": 64,
+            "type": "mcq",
+            "question": "Which tool is widely used to create knowledge graphs in AI?",
+            "options": [
+                "A. Neo4j",
+                "B. Scikit-Learn",
+                "C. PyTorch",
+                "D. Keras"
+            ],
+            "answer": "A. Neo4j",
+            "difficulty": "medium"
+        },
+        {
+            "id": 65,
+            "type": "mcq",
+            "question": "Which of the following best describes an Expert System?",
+            "options": [
+                "A. A system that learns autonomously",
+                "B. A system that applies human expertise through predefined rules",
+                "C. A system that processes large-scale numerical data",
+                "D. A system designed solely for data storage"
+            ],
+            "answer": "B. A system that applies human expertise through predefined rules",
+            "difficulty": "medium"
+        },
+        {
+            "id": 66,
+            "type": "mcq",
+            "question": "What is the primary function of a Knowledge Base in a KBS?",
+            "options": [
+                "A. To store data temporarily",
+                "B. To enable machine learning algorithms",
+                "C. To provide a structured repository of expert knowledge",
+                "D. To execute compiled programs"
+            ],
+            "answer": "C. To provide a structured repository of expert knowledge",
+            "difficulty": "medium"
+        },
+        {
+            "id": 67,
+            "type": "mcq",
+            "question": "Which of these is a key challenge in Knowledge-Based Systems?",
+            "options": [
+                "A. Lack of computing power",
+                "B. Knowledge acquisition bottleneck",
+                "C. High memory consumption",
+                "D. Real-time processing issues"
+            ],
+            "answer": "B. Knowledge acquisition bottleneck",
+            "difficulty": "medium"
+        },
+        {
+            "id": 68,
+            "type": "mcq",
+            "question": "Which of the following is NOT an example of knowledge representation?",
+            "options": [
+                "A. Decision Trees",
+                "B. Relational Databases",
+                "C. JSON Files",
+                "D. Semantic Networks"
+            ],
+            "answer": "C. JSON Files",
+            "difficulty": "medium"
+        },
+        {
+            "id": 69,
+            "type": "mcq",
+            "question": "Which AI technique allows an Expert System to explain its reasoning process?",
+            "options": [
+                "A. Machine Learning",
+                "B. Backward Chaining",
+                "C. Neural Networks",
+                "D. Genetic Algorithms"
+            ],
+            "answer": "B. Backward Chaining",
+            "difficulty": "medium"
+        },
+        {
+            "id": 70,
+            "type": "true_false",
+            "question": "Inference engines can use both forward and backward chaining for reasoning.",
+            "options": "[]",
+            "answer": "True",
+            "difficulty": "medium"
+        },
+        {
+            "id": 71,
+            "type": "true_false",
+            "question": "Tacit knowledge is easily documented and transferred.",
+            "options": "[]",
+            "answer": "False",
+            "difficulty": "medium"
+        },
+        {
+            "id": 72,
+            "type": "true_false",
+            "question": "Machine Learning and KBS are mutually exclusive technologies.",
+            "options": "[]",
+            "answer": "False",
+            "difficulty": "medium"
+        },
+        {
+            "id": 73,
+            "type": "true_false",
+            "question": "Rule-Based Systems rely solely on structured data, not unstructured data.",
+            "options": "[]",
+            "answer": "True",
+            "difficulty": "medium"
+        },
+        {
+            "id": 74,
+            "type": "true_false",
+            "question": "In the DIKW hierarchy, wisdom is derived from raw data.",
+            "options": "[]",
+            "answer": "False",
+            "difficulty": "medium"
+        },
+        {
+            "id": 75,
+            "type": "fill_in_blank",
+            "question": "Fill in the blank: ________ is a technique used in KBS to resolve conflicts between rules.",
+            "options": "[]",
+            "answer": "Conflict Resolution",
+            "difficulty": "medium"
+        },
+        {
+            "id": 76,
+            "type": "fill_in_blank",
+            "question": "Fill in the blank: ________ chaining starts with known facts and applies rules to infer conclusions.",
+            "options": "[]",
+            "answer": "Forward",
+            "difficulty": "medium"
+        },
+        {
+            "id": 77,
+            "type": "fill_in_blank",
+            "question": "Fill in the blank: The process of extracting structured knowledge from unstructured data is called ________.",
+            "options": "[]",
+            "answer": "Knowledge Extraction",
+            "difficulty": "medium"
+        },
+        {
+            "id": 78,
+            "type": "short_answer",
+            "question": "What is the main difference between an Expert System and a Machine Learning model?",
+            "options": "[]",
+            "answer": "An Expert System relies on predefined rules, whereas a Machine Learning model learns from data patterns.",
+            "difficulty": "medium"
+        },
+        {
+            "id": 79,
+            "type": "short_answer",
+            "question": "What is the purpose of ontology in AI?",
+            "options": "[]",
+            "answer": "Ontology structures knowledge to enable better reasoning and inference.",
+            "difficulty": "medium"
+        },
+        {
+            "id": 80,
+            "type": "short_answer",
+            "question": "Explain the difference between forward chaining and backward chaining.",
+            "options": "[]",
+            "answer": "Forward chaining starts from known facts and applies rules to infer conclusions, whereas backward chaining starts with a hypothesis and works backward to find supporting evidence.",
+            "difficulty": "medium"
+        },
+        {
+            "id": 81,
+            "type": "mcq",
+            "question": "Which Python library is commonly used for implementing rule-based systems?",
+            "options": [
+                "A. NumPy",
+                "B. Pandas",
+                "C. scikit-learn",
+                "D. pyknow"
+            ],
+            "answer": "D. pyknow",
+            "difficulty": "medium"
+        },
+        {
+            "id": 82,
+            "type": "mcq",
+            "question": "Which AI system is most suitable for medical diagnosis applications?",
+            "options": [
+                "A. Neural Networks",
+                "B. Rule-Based Expert Systems",
+                "C. Genetic Algorithms",
+                "D. Clustering Algorithms"
+            ],
+            "answer": "B. Rule-Based Expert Systems",
+            "difficulty": "medium"
+        },
+        {
+            "id": 83,
+            "type": "coding",
+            "question": "Write a Python function that uses an if-else statement to determine whether a temperature value indicates fever (above 37.5\u00b0C).",
+            "options": "[]",
+            "answer": "def check_fever(temp):\n    if temp > 37.5:\n        return 'Fever Detected'\n    else:\n        return 'Normal Temperature'\n\nprint(check_fever(38))",
+            "difficulty": "medium"
+        },
+        {
+            "id": 84,
+            "type": "coding",
+            "question": "Write a Python function to classify a student's grade based on the following rules: A (90-100), B (80-89), C (70-79), D (60-69), F (below 60).",
+            "options": "[]",
+            "answer": "def classify_grade(score):\n    if score >= 90:\n        return 'A'\n    elif score >= 80:\n        return 'B'\n    elif score >= 70:\n        return 'C'\n    elif score >= 60:\n        return 'D'\n    else:\n        return 'F'\n\nprint(classify_grade(85))",
+            "difficulty": "medium"
+        },
+        {
+            "id": 90,
+            "type": "mcq",
+            "question": "What does KBS stand for?",
+            "options": [
+                "A. Knowledge-Based System",
+                "B. Key Binary Storage",
+                "C. Knowledge-Based Software",
+                "D. Kernel-Based Structure"
+            ],
+            "answer": "A. Knowledge-Based System",
+            "difficulty": "easy"
+        },
+        {
+            "id": 91,
+            "type": "mcq",
+            "question": "Which of the following is a key component of a Knowledge-Based System?",
+            "options": [
+                "A. Database engine",
+                "B. Inference engine",
+                "C. Web server",
+                "D. File manager"
+            ],
+            "answer": "A. Database engine",
+            "difficulty": "easy"
+        }
+    ]
+}
