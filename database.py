@@ -6,7 +6,7 @@ import os
 def get_db_connection():
     conn = sqlite3.connect("db.sqlite3")
     return conn
-
+#qwerty
 # Create tables for questions and student progress
 def create_tables():
     conn = get_db_connection()
