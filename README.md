@@ -9,6 +9,15 @@ The Intelligent Tutoring System is a web-based application that provides an adap
 - Admin panel for managing questions
 - Supports multiple question types (MCQs, fill-in-the-blank, and word problems)
 
+## Screenshots 
+The following images are from application
+### Student interface
+![student interface](images\student_interface.png)
+### Performance page
+![performance](images\student_performance.png)
+### Admin page
+![admin controls](images\admin_interface.png)
+
 ## Live Demo
 The application is deployed on Streamlit Cloud. You can access it here:  
 [https://intelligent-tutoring-system.streamlit.app/](https://intelligent-tutoring-system.streamlit.app/)
